@@ -10,4 +10,4 @@ See WeatherService.
 
 The WeatherService is registered in DI on server, and Client. See Program.cs for server and Program.cs for client.
 
-When injecting IWeatherService somewhere on server/that executes on server like SSR pages, och Prerentering "Wasm pages", or in other services then the calls to weatherservice will be local, when injecting IWeatherService somewhere on client/that executes on client (wasm) then every call to weatherservice is done over the network by Grpc using Memorypack as serializer.
+When injecting IWeatherService somewhere on server/that executes on server like SSR pages, or Prerentering "Wasm pages", or in other services then the calls to weatherservice will be local, when injecting IWeatherService somewhere on client/that executes on client (wasm) then every call to weatherservice is done over the network by Grpc using Memorypack as serializer.
