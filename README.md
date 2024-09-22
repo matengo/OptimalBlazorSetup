@@ -1,12 +1,13 @@
 # OptimalBlazorSetup
 
-My preference on blazor setup
+## My preference on blazor setup
 
 In serverproject: Components->App.razor I always create a "RenderModeForPage" setting. So that I can specify parts of the app that I want to be fully/only SSR pages. When I implement Open Id Connect, Cookie based Auth I usualy put a Login and Logout part here. But can be used for other stuff as well.
 
+## To work with the different rendermodes easily
 Then I always setup MagicOnion (with Memorypack as Serializer), then I can use the same services when the app is executed on client (wasm) or server. 
 
-See WeatherService. 
+### See WeatherService
 
 The WeatherService is registered in DI on server, and Client. See Program.cs for server and Program.cs for client.
 
